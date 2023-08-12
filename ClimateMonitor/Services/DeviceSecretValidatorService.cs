@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace ClimateMonitor.Services;
 
 public class DeviceSecretValidatorService
@@ -9,6 +11,6 @@ public class DeviceSecretValidatorService
         "secret-ABC-123-XYZ-003"
     };
 
-    public bool ValidateDeviceSecret(string deviceSecret) 
+    public bool ValidateDeviceSecret(string deviceSecret)
         => ValidSecrets.Contains(deviceSecret);
 }
